@@ -1,0 +1,24 @@
+Hooks 
+Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+
+Use state hooks
+The React useState Hook allows us to track state in a function component.State generally refers to data or properties that need to be tracking in an application.
+
+Use effect hooks
+The useEffect Hook allows you to perform side effects in your components.Some examples of side effects are: fetching data, directly updating the DOM, and timers.useEffect accepts two arguments. The second argument is optional.useEffect(<function>, <dependency>)
+
+use context
+React Context is a way to manage state globally.It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
+
+use ref
+The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
+
+use reducer
+The useReducer Hook is similar to the useState Hook. It allows for custom state logic.If you find yourself keeping track of multiple pieces of state that rely on complex logic, useReducer may be useful.
+
+useCallback
+The React useCallback Hook returns a memoized callback function. Think of memoization as caching a value so that it does not need to be recalculated. This allows us to isolate resource intensive functions so that they will not automatically run on every render. The useCallback Hook only runs when one of its dependencies update.This can improve performance.The useCallback and useMemo Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function. 
+
+useMemo 
+The React useMemo Hook returns a memoized value.Think of memoization as caching a value so that it does not need to be recalculated.The useMemo Hook only runs when one of its dependencies update.
+This can improve performance.The useMemo and useCallback Hooks are similar. The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.
